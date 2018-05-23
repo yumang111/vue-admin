@@ -1,0 +1,80 @@
+{
+  "msg": "success",
+  "data": {
+    "panels": [
+      {
+        "resourceId": "579583d288b9586aee135415",
+        "groupDisplay": "基础数据",
+        "groupCls": "tagmanagerlist",
+        "display": "标签管理",
+        "name": "basehouse/tagmanagerlist",
+        "rightCls": "ar ar-angle-right pull-right",
+        "appUrl": "http://nsop.fdc.com.cn/homebaseaction/app/main.html",
+        "aid": "5774dda071bae71c30b0d70e",
+        "leftCls": "ar ar-data-base",
+        "group": "5788831471bae722bc606293"
+      },
+      {
+        "resourceId": "579583d288b9586aee135415",
+        "groupDisplay": "基础数据",
+        "groupCls": "otherCompany",
+        "display": "其他公司",
+        "name": "basehouse/otherCompany",
+        "rightCls": "ar ar-angle-right pull-right",
+        "appUrl": "http://nsop.fdc.com.cn/homebaseaction/app/main.html",
+        "aid": "5774dda071bae71c30b0d70e",
+        "leftCls": "ar ar-data-base",
+        "group": "5788831471bae722bc606293"
+      },
+      {
+        "resourceId": "5788841871bae722bc60629a",
+        "groupDisplay": "小区管理",
+        "groupCls": "plotList",
+        "display": "小区列表",
+        "name": "plot/plotList",
+        "rightCls": "ar ar-angle-right pull-right",
+        "appUrl": "http://nsop.fdc.com.cn/homebaseaction/app/main.html",
+        "aid": "5774dda071bae71c30b0d70e",
+        "leftCls": "ar ar-data-base",
+        "group": "5788831471bae722bc606293"
+      },
+      {
+        "resourceId": "578dcad288b9582b50d6115e",
+        "groupDisplay": "房源管理",
+        "groupCls": "newHouseList",
+        "display": "房源列表-新房",
+        "name": "housemanage/nhlist",
+        "rightCls": "ar ar-angle-right pull-right",
+        "appUrl": "http://nsop.fdc.com.cn/homebaseaction/app/main.html",
+        "aid": "5774dda071bae71c30b0d70e",
+        "leftCls": "ar ar-data-base",
+        "group": "5788831471bae722bc606293"
+      },
+      {
+        "resourceId": "578dcb5d88b9582b50d6115f",
+        "groupDisplay": "房源管理",
+        "groupCls": "oldhouseList",
+        "display": "房源列表-二手房",
+        "name": "housemanage/oldlist",
+        "rightCls": "ar ar-angle-right pull-right",
+        "appUrl": "http://nsop.fdc.com.cn/homebaseaction/app/main.html",
+        "aid": "5774dda071bae71c30b0d70e",
+        "leftCls": "ar ar-data-base",
+        "group": "5788831471bae722bc606293"
+      },
+      {
+        "resourceId": "579583d288b9586aee135415",
+        "groupDisplay": "房源管理",
+        "groupCls": "renthouseList",
+        "display": "房源列表-租房",
+        "name": "housemanage/rentlist",
+        "rightCls": "ar ar-angle-right pull-right",
+        "appUrl": "http://nsop.fdc.com.cn/homebaseaction/app/main.html",
+        "aid": "5774dda071bae71c30b0d70e",
+        "leftCls": "ar ar-data-base",
+        "group": "5788831471bae722bc606293"
+      }
+    ]
+  },
+  "status": 0
+}

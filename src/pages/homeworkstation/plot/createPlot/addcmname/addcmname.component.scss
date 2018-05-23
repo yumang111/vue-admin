@@ -1,0 +1,38 @@
+.cmname-search{
+  padding:30px 0 0 0;
+}
+.box-card{
+  width:250px;
+}
+.name-input{
+  width:280px;
+  .el-form-item__content{
+    width:250px;
+  }
+  .cmname-input{
+    width:250px;
+  }
+}
+.height0{
+  opacity: 0;
+}
+.newName-container{
+  width: 400px;
+  margin: 50px auto 0;
+}
+.btn-type{
+  padding-top:30px;
+  text-align: center;
+}
+.load-more{
+  color: #3c8dbc;
+  cursor: pointer;
+}
+.empty-tips{
+  font-size:14px;
+
+  .warning{
+    margin-right:5px;
+    color:#F7BA2A;
+  }
+}

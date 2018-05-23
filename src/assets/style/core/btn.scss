@@ -1,0 +1,27 @@
+.icon-btn {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.icon-btn-item i.iconfont,
+.icon-btn.iconfont {
+  font-size: 20px;
+  font-weight: 400 !important;
+}
+
+.iconfont {
+  color: #878D99;
+}
+
+.icon-btn,
+.icon-btn-item i {
+  border: none !important;
+}

@@ -1,0 +1,43 @@
+{
+  "msg": "success",
+  "data": {
+    "panels": [{
+        "resourceId": "5a557d5feb062305867135f5",
+        "groupDisplay": "敏感词管理",
+        "groupCls": "treeview",
+        "display": "敏感词管理",
+        "name": "sensitiveWord",
+        "rightCls": "",
+        "appUrl": "http://esf.basetest.fdc.com.cn/homeworkstation/sop-front/index.html",
+        "aid": "5a5420a2eb062305867135e1",
+        "leftCls": "",
+        "group": "5a557ac6eb062305867135f4"
+      },
+      {
+        "resourceId": "5a558310eb06230586713621",
+        "groupDisplay": "楼盘点评",
+        "groupCls": "treeview",
+        "display": "评论管理",
+        "name": "houseComent/commentManager",
+        "rightCls": "",
+        "appUrl": "http://esf.basetest.fdc.com.cn/homeworkstation/sop-front/index.html",
+        "aid": "5a5420a2eb062305867135e1",
+        "leftCls": "",
+        "group": "5a542387eb062305867135e2"
+      },
+      {
+        "resourceId": "5a5c02afeb0623058671362d",
+        "groupDisplay": "楼盘点评",
+        "groupCls": "treeview",
+        "display": "过滤标签管理",
+        "name": "houseComent/filterLabel",
+        "rightCls": "",
+        "appUrl": "http://esf.basetest.fdc.com.cn/homeworkstation/sop-front/index.html",
+        "aid": "5a5420a2eb062305867135e1",
+        "leftCls": "",
+        "group": "5a542387eb062305867135e2"
+      }
+    ]
+  },
+  "status": 0
+}

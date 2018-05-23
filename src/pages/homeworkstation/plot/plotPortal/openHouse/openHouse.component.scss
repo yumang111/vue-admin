@@ -1,0 +1,94 @@
+@import '~@/assets/style/minix';
+.installment {
+  &__proTyped {
+    color: #999;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  &__propertyType {
+    float: left;
+    width: 100px;
+    margin-left: 20px;
+  }
+  &__table{
+    margin-top: 20px;
+  }
+  &__proItem {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+.openHouse {
+  &__show {
+    margin-bottom: 10px;
+  }
+  &__building {
+    margin-right: 10px;
+    .el-checkbox-button__inner {
+      border: 1px solid rgb(191, 203, 217);
+      border-radius: 4px !important;
+    }
+    &.is-checked {
+      &:first-child .el-checkbox-button__inner {
+        border-left-color: rgb(191, 203, 217);
+      }
+    }
+  }
+  &__form {
+    .el-input {
+      width: 200px;
+    }
+  }
+  &__units {
+    line-height: 36px;
+    font-size: 14px;
+    color: #48576a;
+  }
+  &__tip {
+    font-size: 14px;
+    color: #999;
+    line-height: 36px;
+  }
+}
+
+.houseType {
+  &__tableTit {
+    margin: 20px 0;
+    &--name {
+      display: inline-block;
+    }
+    &--handle {
+      float: right;
+    }
+  }
+  &__nowrap {
+    white-space: nowrap;
+  }
+  &__img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &__table {
+    margin-bottom: 20px;
+    .el-table .cell {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.permit {
+  display: inline-block;
+  line-height: 30px;
+  &+& {
+    margin-left: 20px;
+  }
+}

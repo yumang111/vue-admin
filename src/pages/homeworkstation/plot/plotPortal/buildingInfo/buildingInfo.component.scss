@@ -1,0 +1,94 @@
+@import '~@/assets/style/minix';
+@import '~@/assets/style/color';
+.buildingInstallment-wrap {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  height: 32px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.buildingInstallment {
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+.buildings {
+  vertical-align: bottom;
+  display: inline-block;
+  margin-left: 22px;
+  height: 32px;
+}
+
+.buildingsList {
+  @include baseUnitBox();
+  @include changeBoxColor(#fff, #d9d9d9);
+  float: left;
+  margin-right: 5px;
+  max-width: 30px;
+  overflow: hidden;
+  &.active {
+    @include changeBoxColor(#108ee9);
+    color: #fff;
+  }
+}
+
+.bulidingTitle {
+  line-height: 32px;
+  font-size: 12px;
+  float: left;
+}
+
+.buildingForm {
+  position: relative; // margin-left: 20px;
+  // border-bottom: 1px solid #d9d9d9;
+  .el-input__inner {
+    height: 30px;
+  }
+  .saveBuildingInfo {
+    position: absolute;
+    top: -56px;
+    right: 60px;
+  }
+}
+
+.addBuildings {
+  @extend .buildingsList;
+  max-width: 98px;
+  width: 98px;
+  min-width: 30px;
+  border-style: dashed;
+  &:hover {
+    color: #108ee9;
+    border: 1px solid #108ee9;
+  }
+}
+
+.bindBuild {
+  float: right;
+  vertical-align: middle;
+  text-align: right; // width: 260px;
+  &--title {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+}
+
+.houseTagTitle {
+  display: inline-block;
+  font-size: 12px;
+  width: 122px;
+}
+
+.houseTag {
+  margin-left: 10px;
+  user-select: none;
+  &:nth-of-type(1) {
+    margin-left: 0 !important;
+  }
+}
+
+.formItem_suffix {
+  line-height: 36px;
+  font-size: 14px;
+  color: rgb(72, 87, 106);
+}

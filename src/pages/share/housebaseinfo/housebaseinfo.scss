@@ -1,0 +1,124 @@
+.wid250{
+  width:250px;
+}
+.wid350{
+  width:350px;
+}
+.wid150{
+  width:150px;
+}
+.wid100{
+  width:100px;
+}
+.marg15px{
+  margin-right: 15px;
+}
+.floorFormItem{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.housebase-wraper{
+  position: relative;
+}
+.bigImg{
+  position: absolute;
+  top: 0;
+  // left: 0;
+  display: none;
+  z-index: 9999;
+}
+.img-wraper{
+  display: inline-block;
+  .img-item{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 20px 20px 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    .coverFlag{
+      position:absolute;
+      top:0;
+      right:0;
+      width:40px;
+      height:20px;
+      background:#108ee9;
+      color:#fff;
+      font-size:12px;
+      line-height: 20px;
+      text-align:center;
+      display: inline-block;
+    }
+  }
+  .img-btn{
+    width:20px;
+    height: 20px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    text-align:center;
+    line-height: 20px;
+    cursor: pointer;
+    margin:0 3px;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    color: #999;
+    &--delete{
+      @extend .img-btn;
+      left: auto;
+      right: 15px;
+    }
+  }
+}
+.upload-img{
+  display: inline-block;
+}
+.act-tips{
+  color:#108ee9;
+  margin-left:25px;
+  cursor:pointer;
+}
+.operate-house{
+  height: 80px;
+  line-height: 80px;
+}
+.editable-text{
+  width:600px;
+  height:auto;
+  min-height:100px;
+  max-height:200px;
+  overflow: auto;
+  border:1px solid #eee;
+  border-radius:4px;
+  padding-left:10px;
+}
+.opacity0{
+  opacity: 0;
+}
+.floor-item{
+  position:relative;
+  .floor-error-tips{
+    position:absolute;
+    bottom:-30px;
+    left:0px;
+    color:#ff4949;
+    font-size:12px;
+  }
+}
+.housetype-item{
+  width:100px;
+  input{
+    width:50px;
+  }
+  span{
+    margin-top:-30px;
+    margin-right:20px;
+  }
+}

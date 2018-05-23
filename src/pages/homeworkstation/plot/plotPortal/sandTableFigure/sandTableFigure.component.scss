@@ -1,0 +1,231 @@
+@import '~@/assets/style/minix';
+.buildingsList {
+  @include baseUnitBox();
+  @include changeBoxColor(#fff, #d9d9d9);
+  float: left;
+  margin-left: 10px;
+  &.active {
+    @include changeBoxColor(#108ee9);
+    color: #fff;
+  }
+}
+
+.btn__visible {
+  @include baseUnitBox();
+  background: #B4BCCC;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background: #108ee9;
+  }
+}
+
+.bulidingTitle {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+}
+
+.buildingsList-icon {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.buildingsList-wrap {
+  height: 75px;
+  display: inline-block;
+  position: relative;
+}
+
+.houseImg {
+  width: 893px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  position: relative;
+  .houseImg-default-text {
+    font-size: 24px;
+    color: #666;
+  }
+  .avatar {
+    width: 100%;
+  }
+}
+
+.img-tooltips {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@for $i from 1 through 2 {
+  .avatar-uploader#{$i} {
+    @if $i==1 {
+      vertical-align: top;
+    }
+    $size: 30px * $i;
+    width: $size;
+    height: $size;
+    display: inline-block;
+    border: 1px dashed #d9d9d9;
+    border-radius: $size / 10;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      border-color: #20a0ff;
+    }
+    &__icon {
+      width: $size;
+      height: $size;
+      font-size: $size / 2 - $i;
+      color: #8c939d;
+      line-height: $size;
+      text-align: center;
+    }
+  }
+}
+
+// 楼栋按钮样式及hover效果
+.btn__visible {
+  @include baseUnitBox();
+  background: #B4BCCC;
+  color: #fff;
+  .iconfont {
+    color: #fff;
+  }
+  &:hover {
+    background: #108ee9;
+  }
+  &.active {
+    background: #108ee9;
+  }
+  &--build {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
+}
+
+.sand {
+  &__tuding {
+    // 图钉样式
+    font-size: 14px;
+    .iconfont {
+      color: #fff;
+    }
+    &--delete {
+      @include basebox(20, 20);
+      border-radius: 50%;
+      background: #ff4949;
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      cursor: pointer;
+      &:hover {
+        background: rgb(255, 109, 109);
+        border-color: rgb(255, 109, 109)
+      }
+    }
+  }
+  &__title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    &--line {
+      line-height: 60px;
+      height: 60px;
+      vertical-align: middle;
+      border-bottom: 1px solid #d9d9d9;
+      margin-bottom: 20px;
+    }
+    &--btn {
+      float: right;
+      margin-left: 20px;
+    }
+  }
+  &__buildBox {
+    margin-left: -10px;
+    margin-bottom: 10px;
+  }
+  &__other {
+    margin: 20px 0;
+  }
+  &__btnImg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border-radius: 4px;
+    vertical-align: top;
+  }
+  &__iconImg {
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    &--line {
+      margin-bottom: 10px;
+    }
+    &--radius {
+      border-radius: 4px;
+    }
+    .el-button {
+      font-size: 14px;
+    }
+  }
+  &__icon {
+    &:hover {
+      border-color: #108ee9;
+      color: #108ee9;
+    }
+  }
+}
+
+// 沙盘图楼栋标注颜色
+$saleState:( ('x201', #4C99FB), // 在售
+('x202', #EDC34E), // 待售
+('x204', #999999) // 售完
+)!default;
+@each $type,
+$color in $saleState {
+  .color__#{$type} {
+    background-color: $color;
+    border-color: $color;
+    color: #fff;
+    &.el-button:hover,
+    &.el-button:focus,
+    &.el-button--danger:hover,
+    &.el-button--danger:focus {
+      color: #fff;
+      border-color: $color;
+      background-color: $color;
+    }
+  }
+}
+
+// iconType类型对应颜色表
+$iconStatus:( 
+('1', #ee206b), // 地铁
+('2', #baa694), // 商铺
+('3', #19b78b), // 学校 
+('99', #263b79), // 其他
+('', #263b79), // 其他
+)!default;
+@each $type,
+$color in $iconStatus {
+  .iconType_#{$type} {
+    background-color: $color;
+    border-color: $color;
+    &.el-button:hover,
+    &.el-button:focus,
+    &.el-button--danger:hover,
+    &.el-button--danger:focus {
+      color: #fff;
+      border-color: $color;
+      background-color: $color;
+    }
+    .sand__tuding--delete{
+      background: $color;
+    }
+  }
+}

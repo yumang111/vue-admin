@@ -1,0 +1,55 @@
+.houseType {
+  &__tableTit {
+    margin: 20px 0;
+    &--name {
+      display: inline-block;
+    }
+    &--handle {
+      float: right;
+      margin-bottom: 10px;
+    }
+  }
+  &__nowrap {
+    white-space: nowrap;
+  }
+  &__img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &__table {
+    margin-bottom: 20px;
+    .el-table .cell {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.icon-btn {
+  cursor: pointer;
+}
+
+.icon-btn-item {
+  padding-right: 10px;
+  font-size: 14px;
+  i {
+    &.iconfont {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    width:24px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    border:1px solid #ddd;
+    margin-right:5px;
+    vertical-align: middle;
+  }
+}

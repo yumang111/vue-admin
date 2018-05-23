@@ -1,0 +1,38 @@
+// 使用前先导入minix.scss
+// 二级物业类型对应颜色表
+$properTypes:( ('', #fff), ('w307', #F46060), // 别墅
+('w304', #FF8585), // 公寓
+('w310', #FFA450), // 经济适用房
+('w309', #F5CE56), // 双限房
+('w303', #E3E540), // 住宅
+('w311', #BADC57), // 商业测试
+('w312', #72CF65), // 社区商业
+('w313', #4EDD9A), // 专业市场
+('w314', #4EDDD8), // 综合体
+('w315', #5FC7EF), // 甲级写字楼
+('w316', #5F9EEF), // 乙级写字楼
+('w317', #5C71E8) // 工业园区
+)!default;
+@each $type,
+$color in $properTypes {
+  .color_#{$type} {
+    color: #fff;
+    @include changeBoxColor ($color);
+    @if $type=='' {
+      color: #5A5E66;
+      border-color: #d9d9d9;
+    }
+  }
+}
+
+// 楼栋销售状态对应颜色表
+$saleStatus:( ('sale', #259b24), // 在售
+('sold', #e51c23), // 已售
+('unknown', #d9d9d9) // 未知
+)!default;
+@each $type,
+$color in $saleStatus {
+  .color__#{$type} {
+    border: 2px solid $color;
+  }
+}

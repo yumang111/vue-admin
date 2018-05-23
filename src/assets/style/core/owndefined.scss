@@ -1,0 +1,73 @@
+.f-l {
+  float: left !important;
+}
+
+.f-r {
+  float: right !important;
+}
+
+.f-n {
+  float: none !important;
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table
+}
+
+.cf:after {
+  clear: both
+}
+
+.cf {
+  zoom: 1
+}
+
+.width120 {
+  width: 120px;
+}
+
+.width100 {
+  width: 100px;
+}
+
+.width200 {
+  width: 200px;
+}
+
+.padlft15 {
+  padding-left: 15px;
+}
+
+.padlft20 {
+  padding-left: 20px;
+}
+
+.padrg15 {
+  padding-right: 15px;
+}
+
+.martopj10 {
+  margin-top: -10px;
+}
+
+.martopj15 {
+  margin-top: -15px;
+}
+
+.maright15 {
+  margin-right: 15px;
+}
+
+.maright40 {
+  margin-right: 40px;
+}
+
+.martop25 {
+  margin-top: 25px;
+}
+
+.redfont {
+  color: #ff4949;
+}

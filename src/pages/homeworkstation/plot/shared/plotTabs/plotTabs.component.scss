@@ -1,0 +1,14 @@
+.houseType {
+    margin: 20px 0 20px 40px;
+    color: #666;
+  li {
+    float: left;
+    line-height: 32px;
+    padding: 0 16px;
+    border:1px solid #ccc;
+    border-left: 0px;
+  }
+  &:first-child {
+    border-left: 1px solid #ccc
+  }
+}

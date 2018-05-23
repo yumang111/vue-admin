@@ -1,0 +1,23 @@
+.hl-tab {
+  padding-top: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  .el-menu {
+    background-color: #fff;
+    font-weight: bold;
+  }
+  .el-menu-item {
+    font-size: 16px;
+    font-weight: 400;
+    &:hover {
+      background-color: #fff;
+    }
+    .is-active {
+      color: #108ee9;
+    }
+    .router-link-active,
+    &.router-link-active {
+      color: #108ee9;
+    }
+  }
+}

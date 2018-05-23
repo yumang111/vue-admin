@@ -1,0 +1,50 @@
+.dynamic {
+  &__public {
+    margin-top: 10px;
+  }
+  &__list {
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  &__item {
+    padding: 15px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    color: rgb(31, 45, 61);
+    background-color: #f4f4f5;
+    border-radius: 4px;
+    word-break: break-all;
+    &.first {
+      background-color: rgba(16, 142, 233, .1);
+      color: #108ee9;
+    }
+  }
+  &__btn {
+    background: #b4bccc;
+    border-color: #b4bccc;
+    margin-top: 15px;
+    & + & {
+      margin-right: 20px;
+    }
+    &:hover {
+      background: #108ee9;
+      border-color: #108ee9;
+    }
+    .iconfont {
+      color: #fff;
+    }
+  }
+  &__time {
+    margin-top: 15px;
+    display: inline-block;
+    color: #909399;
+  }
+  &__more{
+    text-align: center;
+  }
+}
+.tip{
+  color: #909399;
+  padding: 0 20px;
+}

@@ -1,0 +1,31 @@
+@mixin basebox($width, $height) {
+  height: $height+0px;
+  width: $width+0px;
+  text-align: center;
+  line-height: $height+0px;
+  box-sizing: border-box;
+}
+
+@mixin baseUnitBox( $width:32) {
+  @include basebox($width, 32);
+  border-radius: 4px;
+  color: #5A5E66;
+  font-size: 12px;
+  user-select: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+// 只传一个值，默认边框跟背景色相同
+@mixin changeBoxColor($bg, $borderColor:$bg, $borderStyle:solid) {
+  background-color: $bg;
+  border: 1px $borderStyle $borderColor;
+}
+
+// 单行(省略)...
+@mixin ellipsis($width) {
+  width: $width + 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

@@ -1,0 +1,263 @@
+@import url('./core/reset.scss');
+@import url('./core/btn.scss');
+@import url('./core/pagetitle.scss');
+@import url('./core/owndefined.scss');
+.color_blank{
+  color: #333;
+}
+.cursorArrow {
+  cursor: default !important;
+}
+
+.page-container {
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.small-padding .el-table .cell {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.dialog-wraper-center {
+  .el-dialog__footer,
+  .el-dialog__header {
+    text-align: center;
+  }
+}
+
+//标题样式
+.header {
+  &--title {
+    line-height: 80px;
+    font-size: 22px;
+    color: #2d2f33;
+    border-bottom: 1px solid #d9d9d9;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    vertical-align: middle;
+  }
+  &--titleH2 {
+    @extend .header--title;
+    padding-left: 0;
+    .subtitle {
+      // 标题提示
+      font-size: 14px;
+      color: #878D99;
+    }
+    &.near {
+      margin-top: -20px;
+    }
+  }
+  &--titleH3 {
+    @extend .header--titleH2;
+    line-height: 60px;
+    font-size: 20px;
+  }
+}
+
+.btnDanger {
+  position: absolute;
+  right: 0;
+}
+
+.el-radio-button--large .el-radio-button__inner {
+  font-size: 12px;
+}
+
+.el-table {
+  font-size: 12px;
+  .cell {
+    padding-left: 11px;
+    padding-right: 12px;
+  }
+}
+
+.tab {
+  &__box {
+    margin-bottom: 20px;
+    .el-radio-button__inner {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 160px;
+      background-color: #eef1f6;
+    }
+  }
+  &__item {
+    line-height: 36px;
+  }
+  &__add {
+    // 并排安放的文字按钮
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 20px !important;
+  }
+}
+
+// 按钮组样式
+.btn--group {
+  padding: 7px;
+  background: #B4BCCC;
+  border-color: #B4BCCC;
+  .iconfont {
+    color: #fff;
+  }
+  &.active {
+    background-color: #108ee9;
+    border-color: #108ee9;
+  }
+  &:hover {
+    background-color: #108ee9;
+    border-color: #108ee9;
+  }
+  &:focus {
+    border-color: #B4BCCC;
+  }
+}
+
+// 相册图片样式
+.album {
+  &__wrap {
+    width: 100%;
+    .icon-paixu1 {
+      font-size: 14px;
+      vertical-align: middle;
+    }
+  }
+  &__albumList {
+    position: relative;
+  }
+  &__picList{
+    position: relative;
+  }
+  &__albumIcon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  &__photoTypeList {
+    height: 30px;
+    line-height: 30px;
+    background: #f7f7f7;
+    display: flex;
+    padding: 0 10px 0 30px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    font-size: 14px;
+    li {
+      flex: 1;
+      cursor: pointer;
+      &.active {
+        color: #007dd4;
+      }
+    }
+  }
+  &__photoList {
+    clear: both;
+    overflow: hidden;
+    &::after {
+      content: '';
+      display: block;
+    }
+    li {
+      width: 202px;
+      height: 265px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      text-align: center;
+      padding: 10px 4px 4px 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      margin-right: 20px;
+      img {
+        width: 152px;
+        height: 152px;
+        display: block;
+        margin: 0 auto;
+      }
+      float: left;
+    }
+  }
+  $heightArr:(
+    ('1', 240px), // 户型图
+    ('7', 290px), // 进度图
+  )!default;
+  @each $type,$height in $heightArr {
+    &__type#{$type} {
+      height: $height !important;
+    }
+  }
+  &__imgdec-wrap {
+    padding: 9px;
+    box-sizing: border-box;
+  } // 图片上传
+  &__delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 20;
+  }
+  &__imgdec {
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+
+// todo: 调整页面特殊部分
+.el-form-item {
+  button {
+    vertical-align: top
+  }
+  &__label {
+    padding: 8px 12px 8px 0;
+  }
+  &__content {
+    line-height: 30px;
+  }
+  &__error {
+    position: relative;
+  }
+}
+
+.icon-btn {
+  &:hover {
+    color: #fff;
+    background: #108ee9;
+  }
+}
+.iconsort{
+  font-size: 14px;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background: #108ee9;
+  }
+}
+
+// 标题面包屑样式
+.checkAlbum {
+  &__breadcrumb {
+    display: inline-block;
+    .el-breadcrumb {
+      font-size: 20px;
+    }
+  }
+}
+// 暂无图片样式
+.noPic {
+  color: rgb(72, 87, 106);
+  font-size: 16px;
+}
+
+// 分页器mt20
+.paginationStyle{
+  margin-top: 20px;
+}

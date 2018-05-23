@@ -1,0 +1,299 @@
+@import '~@/assets/style/minix';
+.cursorPointer {
+  cursor: pointer !important;
+}
+
+.iconfont {
+  line-height: 32px;
+}
+
+.gray {
+  background-color: #B4BCCC !important;
+  border-color: #B4BCCC !important;
+  &.is-disabled {
+    background-color: rgb(238, 241, 246) !important;
+    border-color: rgb(209, 219, 229) !important;
+  }
+}
+
+.tagRadio {
+  &__item {
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #5A5E66;
+    cursor: pointer;
+    &>.active {
+      color: #108ee9;
+    }
+  }
+  &__circle {
+    display: inline-block;
+    line-height: 30px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    vertical-align: sub;
+  }
+  &__button {
+    display: inline-block;
+    color: #5A5E66;
+    font-size: 14px;
+    line-height: 30px;
+    .iconfont {
+      margin-right: 10px;
+    }
+    &--title {
+      cursor: pointer;
+      &.active {
+        color: #108ee9;
+      }
+    }
+  }
+}
+
+.sale__tag {
+  @extend .tagRadio__circle;
+  border: 1px solid #259b24;
+  &__sale {
+    border-color: #259b24;
+    &.active {
+      background: #259b24;
+    }
+  }
+  &__sold {
+    border-color: #e51c23;
+    &.active {
+      background: #e51c23;
+    }
+  }
+  &__unknown {
+    border-color: #d9d9d9;
+    &.active {
+      background: #d9d9d9;
+    }
+  }
+  &__tit {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 30px;
+    width: 30px;
+    vertical-align: top;
+  }
+}
+
+.visualBuilding {
+  margin-top: 20px;
+  padding-top: 140px;
+  position: relative;
+  display: inline-block;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.saveBuildingBox {
+  white-space: nowrap;
+  margin-top: 30px;
+}
+
+.unitBox {
+  display: inline-block;
+  position: relative; // min-width: 84px;
+  margin-left: 100px;
+  vertical-align: top;
+  &:nth-of-type(1) {
+    margin-left: 54px;
+  }
+}
+
+.floorBox {
+  display: inline-block;
+  position: relative;
+  min-width: 52px;
+  width: 52px; // margin-left: 20px;
+  margin-left: 0;
+  vertical-align: top; // top: -40px;
+}
+
+.colBox {
+  width: 32px;
+  display: inline-block;
+  margin-left: 10px;
+  .unitList {
+    margin-left: 0;
+  }
+}
+
+.unitList {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  @include baseUnitBox();
+  @include changeBoxColor(#cfefdf);
+  &.noexsit {
+    border: 1px solid #d9d9d9;
+    opacity: 0.67;
+    background-color: #fff;
+  }
+}
+
+.floorList {
+  @include baseUnitBox(50);
+  @include changeBoxColor(#fff, #d9d9d9);
+  margin-bottom: 10px;
+  &--noborder {
+    border: none;
+  }
+  &--top {
+    position: absolute;
+    top: -50px;
+  }
+}
+
+.unitInfoName {
+  @include baseUnitBox(50);
+  height: 32px;
+  margin-bottom: 10px;
+  cursor: auto;
+}
+
+.btn__visible {
+  @include baseUnitBox();
+  background: #B4BCCC;
+  color: #fff;
+  .iconfont {
+    color: #fff;
+  }
+  &:hover {
+    color: #fff;
+    background: #108ee9;
+  }
+  &--addUnit {
+    position: absolute;
+    left: 30px;
+    top: -160px;
+  }
+  &--addRoom {
+    position: absolute;
+    top: -50px;
+    // right: -40px;
+  }
+  &--deleteRoom {
+    position: absolute;
+    // right: 0;
+    top: -50px;
+  }
+  &--addElevator {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  &--deleteUnit {
+    margin-left: 10px;
+    position: absolute;
+    top: -160px;
+    left: 80px;
+  }
+  &--bindUnit {
+    background: #fff;
+    border-color: #fff;
+    position: absolute;
+    top: -120px;
+    left: 10px;
+    .iconfont {
+      color: #B4BCCC;
+    }
+  }
+  &--bindUnitTitle {
+    position: absolute;
+    left: 40px;
+    top: -120px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #878D99;
+    line-height: 32px;
+  }
+  &--bindHouseType {
+    float: left;
+    margin-bottom: 10px;
+  }
+  &--unbindHouseType {
+    @extend .btn__visible--bindHouseType;
+    background: #fff;
+    border-color: #fff;
+    color: #5A5E66;
+  }
+}
+
+.unitFloorList {
+  @extend .unitList;
+  width: 70px;
+  text-align: left;
+  background-color: #fff;
+  border-color: #fff;
+  font-size: 22px;
+  color: #2D2F33;
+  position: absolute;
+  top: -160px;
+  left: 0;
+}
+
+// 单元楼
+.unitNum {
+  height: 32px;
+  line-height: 32px;
+  position: absolute;
+  top: -100px;
+  font-size: 12px;
+}
+
+.unitColNum {
+  @extend .unitList;
+  margin-top: 10px;
+  float: left;
+  @include changeBoxColor(#fff);
+  margin-top: 42px;
+}
+
+.unitHouseNumList {
+  @extend .unitColNum;
+  @include changeBoxColor(#fff);
+  margin-top: 0;
+  &.noBinding {
+    @include changeBoxColor(#fff, #d9d9d9, dashed);
+  }
+}
+
+@import '~@/assets/style/color';
+.setoutSaleTit {
+  color: rgb(31, 47, 61);
+  line-height: 36px;
+  font-size: 14px;
+}
+
+.houseTagBox {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.houseTagTitle {
+  display: inline-block;
+  font-size: 14px;
+  color: #5A5E66;
+  width: 122px;
+  line-height: 30px;
+}
+
+.houseTag {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  user-select: none;
+  &:nth-of-type(1) {
+    margin-left: 0 !important;
+  }
+}
+.elevatorStyle{
+  margin-top: -5px;
+}

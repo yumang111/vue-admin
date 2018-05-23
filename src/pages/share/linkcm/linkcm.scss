@@ -1,0 +1,16 @@
+.dialog-wraper-link{
+  .el-dialog__footer,.el-dialog__header{
+    text-align:center;
+  }
+
+}
+.linkdata-table{
+  margin-top:30px;
+  .el-table .cell{
+    padding-left:6px;
+    padding-right:6px;
+  }
+}
+.el-table .cur-row {
+    background: #c9e5f5;
+  }

@@ -1,0 +1,177 @@
+{
+  "unit": [
+    { // 整栋信息
+      "buildingNum": 1, // 第几栋
+      "unitSum": 3, // 每栋单元数
+      "floor": 14, // 总层数
+      "minFloor": -2, // 负层
+      "unitList": [ // 单元楼列表信息
+        {
+          "unitNum": 1,
+          "elevator": 2,
+          "roomNum": 2, // 单元楼房间数
+          "unitRoom": [ // 单元楼房间信息
+            {
+              "colNum": 1, // 一列的房间号
+              "colHouseType": "",
+              "colList": [
+                {
+                  "id":"",
+                  "floor": "1",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "yushouzheng":"",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "2",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "3",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "4",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "5",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "6",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "7",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "8",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "9",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "10",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "11",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "12",
+                  "houseType": "",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                }
+              ]
+            },
+            {
+              "colNum": 2, // 一列的房间号
+              "colHouseType": "A2",
+              "colList": [
+                {
+                  "floor": "1",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "floor": "2",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "3",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "4",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "5",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "6",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "7",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "8",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "9",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "10",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "11",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                },
+                {
+                  "singleRoomNum": "12",
+                  "houseType": "A2",
+                  "houseTag": "住宅",
+                  "tagColor": "#cfefdf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

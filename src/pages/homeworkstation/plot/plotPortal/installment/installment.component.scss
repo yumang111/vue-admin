@@ -1,0 +1,48 @@
+@import '~@/assets/style/minix';
+[v-cloak] {
+  display: none;
+}
+
+.installment {
+  &__wrap {
+    .el-autocomplete,
+    .el-select,
+    .el-cascader {
+      width: 100%;
+    }
+  }
+  &__proTyped {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  &__proItem {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  &__schoolBtn {
+    line-height: 34px;
+  }
+}
+
+.input-prefix {
+  line-height: 30px;
+  font-size: 14px;
+  color: rgb(31, 45, 61)
+}
+
+.tellyou {
+  display: inline-block;
+  vertical-align: top;
+  &__tit {
+    width: 100px;
+  }
+  &__desc {
+    width: 360px;
+  }
+  &__btn {
+    vertical-align: top;
+    margin-left: 10px;
+  }
+}

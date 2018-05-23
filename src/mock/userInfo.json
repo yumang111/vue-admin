@@ -1,0 +1,62 @@
+{
+  "data": {
+    "adminName": "superadmin",
+    "adminNo": "admin",
+    "adminId": "57806e8171bae72548c18492",
+    "project": [{
+        "aUrl": "http://test.uc.fdc.com.cn/ucback/main.html",
+        "proname": "用户中心",
+        "mycollection": [],
+        "aid": "577247a671bae77ec0e8377e",
+        "key": "model"
+      },
+      {
+        "aUrl": "http://test.homebase.fdc.com.cn/homebaseaction/app/main.html",
+        "proname": "置业线公共数据()",
+        "mycollection": [],
+        "aid": "5774dda071bae71c30b0d70e",
+        "key": "basehouse"
+      },
+      {
+        "aUrl": "http://test.scweb.fdc.com.cn/servicecenterweb/main.html",
+        "proname": "服务&订单中心",
+        "mycollection": [],
+        "aid": "57bd59f888b958603d1288a4",
+        "key": "servicecenter"
+      },
+      {
+        "aUrl": "http://house.wh.test.fdc.com.cn/homenhbackend/main.html#basehouse",
+        "proname": "新房后台（test）",
+        "mycollection": [],
+        "aid": "57e244eb88b95845c16daba9",
+        "key": "newhousemanage"
+      },
+      {
+        "aUrl": "http://dec.wh.test.fdc.com.cn/homedecbackend/main.html",
+        "proname": "家居后台",
+        "mycollection": [],
+        "aid": "5861120188b9586f8b52939a",
+        "key": "homefurnishing"
+      },
+      {
+        "aUrl": "http://esf.basetest.fdc.com.cn/homeworkstation/sop-front/index.html",
+        "proname": "homeworkstation",
+        "mycollection": [],
+        "aid": "5a45a31ceb062305823aebc3",
+        "key": "homeworkstation"
+      },
+      {
+        "aUrl": "http://esf.basetest.fdc.com.cn/homeworkstation/sop-front/index.html",
+        "proname": "评论管理",
+        "mycollection": [],
+        "aid": "5a5420a2eb062305867135e1",
+        "key": "comment"
+      }
+    ],
+    "remark": "权限max的初始管理员",
+    "id": 41,
+    "pwd": "123",
+    "substations": "[]"
+  },
+  "state": 1
+}

@@ -1,0 +1,71 @@
+.maplocate-wraper{
+  // padding:0 20px;
+  .cmname-info{
+    padding:10px 0 0px;
+    h2{
+      display: inline-block;
+      font-size:20px;
+      font-weight: bold;
+    }
+  }
+}
+#map{
+  width:100%;
+  height: 408px;
+}
+.map-info-title{
+  font-size:16px;
+  color:#666;
+  padding:10px 0;
+  &.first-item{
+    padding-top:15px;
+  }
+}
+.map-info{
+  padding:0 20px;
+}
+.searchArround{
+  padding:0px 0 15px;
+  .arroundItem{
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 15px;
+    font-size:14px;
+  }
+  .arroundItem.cur{
+    color:#3c8dbc;
+  }
+}
+#r-result{
+  height: 300px;
+  overflow: auto;
+}
+.btn-wraper{
+  padding-top:20px;
+}
+.tradeArea-wraper{
+  .lable-name{
+    width:100px;
+    display: inline-block;
+    font-size:14px;
+  }
+  .tradeArea-item{
+    // margin-bottom: 10px;
+    .block{
+      width:180px;
+    }
+    // width:50%;
+  }
+}
+.createcmBtn{
+  padding:50px 0;
+  margin:0 auto;
+  text-align: center;
+  .btn{
+    width:150px;
+    height: 40px;
+  }
+}
+.spell-input{
+  width:280px;
+}
